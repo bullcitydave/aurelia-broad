@@ -3,6 +3,22 @@
 
   <form submit.trigger="addTodo()">
     <input type="text" value.bind="todoDescription">
+    <input type="text" value.bind="todoTags">
     <button type="submit">Add Todo</button>
   </form>
+
+  <ul>
+    <li repeat.for="todo of todos">
+        <input type="checkbox" checked.bind="todo.done">
+        <span css="text-decoration: ${todo.done ? 'line-through' : 'none'}">
+            ${todo.description}
+        </span>
+      <span>
+          <strong>Tags</strong>
+          <span>
+              ${todo.tags}
+          </span>
+      <button click.trigger="removeTodo(todo)">Remove</button>
+    </li>
+  </ul>
 </template>
