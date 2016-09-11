@@ -1,2 +1,4 @@
 src/.DS_Store
 .vscode
+node_modules
+jspm_packages
