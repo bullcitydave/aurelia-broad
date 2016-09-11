@@ -173,3 +173,12 @@ div.au-stagger {
     opacity: 1;
   }
 }
+
+
+// ** GITHUB REPOS ** //
+
+.card .content .description {
+    font-style: italic;
+    color: #fff;
+    padding: 20px;
+}
